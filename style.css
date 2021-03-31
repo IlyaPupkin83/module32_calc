@@ -1,0 +1,57 @@
+.calculator {
+	width: 300px;
+	background: rgb(200, 200, 200);
+	border: 1px solid rgb(0, 0, 0);
+}
+
+.calculatorScreen {
+	display: grid;
+	grid-template-rows: 2fr;
+	grid-template-columns: 2fr;
+	padding: 2px;
+	padding-top: 10px;
+}
+
+.calculatorButtonRow {
+	display: grid;
+	grid-template-rows: 2fr;
+	grid-template-columns: 2fr;
+	padding: 2px;
+	padding-top: 10px;
+	height: 250px;
+	font-family: "Share Tech Mono", monospace;
+}
+
+.calculatorButtonFourRow {
+	display: grid;
+	grid-template-rows: 2fr;
+	grid-template-columns: 2fr 2fr 2fr 2fr;
+	padding: 2px;
+	padding-top: 10px;
+	grid-column-gap: 2px;
+	font-family: "Share Tech Mono", monospace;
+}
+
+.calculatorOneButtonRow {
+	display: grid;
+	grid-template-columns: 15fr auto;
+	grid-column-gap: 1px;
+}
+
+.calculatorButtonRow__buttonAction_reset {
+	text-align: center;
+	background: rgb(255, 135, 135);
+}
+
+.calculatorButtonRow__buttonAction_calc {
+	font-weight: bold;
+}
+
+.calculatorScreen_screen_viewResult_disabled {
+	pointer-events: none;
+	height: 150px;
+}
+
+.calculatorScreen__screen_viewOperand_disabled {
+	pointer-events: none;
+}
